@@ -1,0 +1,6 @@
+framework module Pods_mazad {
+  umbrella header "Pods-mazad-umbrella.h"
+
+  export *
+  module * { export * }
+}

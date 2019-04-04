@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67621AD52254DF17009CCC5C /* favoirteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67621AD42254DF17009CCC5C /* favoirteVC.swift */; };
+		67621AD72254DF49009CCC5C /* trashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67621AD62254DF49009CCC5C /* trashVC.swift */; };
+		67621AD92254F014009CCC5C /* favoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67621AD82254F014009CCC5C /* favoriteCell.swift */; };
+		67621ADB2254F3FB009CCC5C /* trachcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67621ADA2254F3FB009CCC5C /* trachcell.swift */; };
+		67621ADD2255026B009CCC5C /* contact_Us.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67621ADC2255026B009CCC5C /* contact_Us.swift */; };
 		677F73C822517AF40004BC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F73C722517AF40004BC10 /* AppDelegate.swift */; };
-		677F73CA22517AF40004BC10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F73C922517AF40004BC10 /* ViewController.swift */; };
 		677F73CD22517AF40004BC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677F73CB22517AF40004BC10 /* Main.storyboard */; };
 		677F73CF22517AF70004BC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677F73CE22517AF70004BC10 /* Assets.xcassets */; };
 		677F73D222517AF70004BC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677F73D022517AF70004BC10 /* LaunchScreen.storyboard */; };
+		677F73DC22517DE60004BC10 /* Janna LT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 677F73DA22517DE60004BC10 /* Janna LT.txt */; };
+		677F73DD22517DE60004BC10 /* JANNALT-REGULAR_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */; };
+		67D1A30422557D620098E80D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A30322557D620098E80D /* API.swift */; };
+		67D1A307225584EE0098E80D /* GetUserAuctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A306225584EE0098E80D /* GetUserAuctions.swift */; };
+		67D1A30A22558F8A0098E80D /* myAuctionsAndAdv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A30922558F8A0098E80D /* myAuctionsAndAdv.swift */; };
+		67D1A30C225590A20098E80D /* MyAcutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A30B225590A20098E80D /* MyAcutions.swift */; };
+		67D1A3122255A6520098E80D /* contactUs2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A3112255A6520098E80D /* contactUs2.swift */; };
+		67E3D34222518CFE0013518D /* NotifacationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3D34122518CFE0013518D /* NotifacationsVC.swift */; };
+		67E3D34622518E490013518D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3D34522518E490013518D /* NotificationCell.swift */; };
+		67E3D348225193A90013518D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3D347225193A90013518D /* Extensions.swift */; };
+		715C52CEC95D9DF9DD11DB8F /* Pods_mazad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E387C5EBF6D48D65798370AC /* Pods_mazad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19387C88601E6CBAFF2F86E0 /* Pods-mazad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mazad.release.xcconfig"; path = "Target Support Files/Pods-mazad/Pods-mazad.release.xcconfig"; sourceTree = "<group>"; };
+		2399CF5A9BFC5FEB7921495E /* Pods-mazad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mazad.debug.xcconfig"; path = "Target Support Files/Pods-mazad/Pods-mazad.debug.xcconfig"; sourceTree = "<group>"; };
+		67621AD42254DF17009CCC5C /* favoirteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoirteVC.swift; sourceTree = "<group>"; };
+		67621AD62254DF49009CCC5C /* trashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trashVC.swift; sourceTree = "<group>"; };
+		67621AD82254F014009CCC5C /* favoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteCell.swift; sourceTree = "<group>"; };
+		67621ADA2254F3FB009CCC5C /* trachcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trachcell.swift; sourceTree = "<group>"; };
+		67621ADC2255026B009CCC5C /* contact_Us.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contact_Us.swift; sourceTree = "<group>"; };
 		677F73C422517AF40004BC10 /* mazad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mazad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677F73C722517AF40004BC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		677F73C922517AF40004BC10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		677F73CC22517AF40004BC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		677F73CE22517AF70004BC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		677F73D122517AF70004BC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		677F73D322517AF70004BC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		677F73DA22517DE60004BC10 /* Janna LT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Janna LT.txt"; sourceTree = "<group>"; };
+		677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JANNALT-REGULAR_0.TTF"; sourceTree = "<group>"; };
+		67D1A30322557D620098E80D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		67D1A306225584EE0098E80D /* GetUserAuctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserAuctions.swift; sourceTree = "<group>"; };
+		67D1A30922558F8A0098E80D /* myAuctionsAndAdv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAuctionsAndAdv.swift; sourceTree = "<group>"; };
+		67D1A30B225590A20098E80D /* MyAcutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAcutions.swift; sourceTree = "<group>"; };
+		67D1A3112255A6520098E80D /* contactUs2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactUs2.swift; sourceTree = "<group>"; };
+		67E3D34122518CFE0013518D /* NotifacationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifacationsVC.swift; sourceTree = "<group>"; };
+		67E3D34522518E490013518D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		67E3D347225193A90013518D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E387C5EBF6D48D65798370AC /* Pods_mazad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mazad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715C52CEC95D9DF9DD11DB8F /* Pods_mazad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3490ABA5D29A312CB86146DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2399CF5A9BFC5FEB7921495E /* Pods-mazad.debug.xcconfig */,
+				19387C88601E6CBAFF2F86E0 /* Pods-mazad.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		677F73BB22517AF30004BC10 = {
 			isa = PBXGroup;
 			children = (
 				677F73C622517AF40004BC10 /* mazad */,
 				677F73C522517AF40004BC10 /* Products */,
+				3490ABA5D29A312CB86146DC /* Pods */,
+				71871E2AD3737EC18EB4D56C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +98,76 @@
 		677F73C622517AF40004BC10 /* mazad */ = {
 			isa = PBXGroup;
 			children = (
+				67D1A308225584FD0098E80D /* services */,
+				67D1A305225584C10098E80D /* model */,
+				67E3D34422518DC20013518D /* Views */,
+				67E3D34322518DB30013518D /* container */,
+				677F73D922517DE60004BC10 /* FONTS */,
 				677F73C722517AF40004BC10 /* AppDelegate.swift */,
-				677F73C922517AF40004BC10 /* ViewController.swift */,
 				677F73CB22517AF40004BC10 /* Main.storyboard */,
 				677F73CE22517AF70004BC10 /* Assets.xcassets */,
 				677F73D022517AF70004BC10 /* LaunchScreen.storyboard */,
 				677F73D322517AF70004BC10 /* Info.plist */,
 			);
 			path = mazad;
+			sourceTree = "<group>";
+		};
+		677F73D922517DE60004BC10 /* FONTS */ = {
+			isa = PBXGroup;
+			children = (
+				677F73DA22517DE60004BC10 /* Janna LT.txt */,
+				677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */,
+			);
+			path = FONTS;
+			sourceTree = "<group>";
+		};
+		67D1A305225584C10098E80D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				67D1A306225584EE0098E80D /* GetUserAuctions.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		67D1A308225584FD0098E80D /* services */ = {
+			isa = PBXGroup;
+			children = (
+				67D1A30322557D620098E80D /* API.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		67E3D34322518DB30013518D /* container */ = {
+			isa = PBXGroup;
+			children = (
+				67E3D34122518CFE0013518D /* NotifacationsVC.swift */,
+				67621AD42254DF17009CCC5C /* favoirteVC.swift */,
+				67621AD62254DF49009CCC5C /* trashVC.swift */,
+				67621ADC2255026B009CCC5C /* contact_Us.swift */,
+				67D1A30922558F8A0098E80D /* myAuctionsAndAdv.swift */,
+				67D1A3112255A6520098E80D /* contactUs2.swift */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
+		67E3D34422518DC20013518D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67E3D34522518E490013518D /* NotificationCell.swift */,
+				67621AD82254F014009CCC5C /* favoriteCell.swift */,
+				67E3D347225193A90013518D /* Extensions.swift */,
+				67621ADA2254F3FB009CCC5C /* trachcell.swift */,
+				67D1A30B225590A20098E80D /* MyAcutions.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71871E2AD3737EC18EB4D56C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E387C5EBF6D48D65798370AC /* Pods_mazad.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 677F73D622517AF70004BC10 /* Build configuration list for PBXNativeTarget "mazad" */;
 			buildPhases = (
+				DF8CE1EADACBD089FEDEFCFC /* [CP] Check Pods Manifest.lock */,
 				677F73C022517AF40004BC10 /* Sources */,
 				677F73C122517AF40004BC10 /* Frameworks */,
 				677F73C222517AF40004BC10 /* Resources */,
+				AA3CA95977BCE3F5D89622AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +231,85 @@
 			buildActionMask = 2147483647;
 			files = (
 				677F73D222517AF70004BC10 /* LaunchScreen.storyboard in Resources */,
+				677F73DD22517DE60004BC10 /* JANNALT-REGULAR_0.TTF in Resources */,
 				677F73CF22517AF70004BC10 /* Assets.xcassets in Resources */,
+				677F73DC22517DE60004BC10 /* Janna LT.txt in Resources */,
 				677F73CD22517AF40004BC10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA3CA95977BCE3F5D89622AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mazad/Pods-mazad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mazad/Pods-mazad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF8CE1EADACBD089FEDEFCFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mazad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		677F73C022517AF40004BC10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677F73CA22517AF40004BC10 /* ViewController.swift in Sources */,
+				67621ADD2255026B009CCC5C /* contact_Us.swift in Sources */,
+				67D1A3122255A6520098E80D /* contactUs2.swift in Sources */,
 				677F73C822517AF40004BC10 /* AppDelegate.swift in Sources */,
+				67621AD52254DF17009CCC5C /* favoirteVC.swift in Sources */,
+				67E3D34622518E490013518D /* NotificationCell.swift in Sources */,
+				67D1A30422557D620098E80D /* API.swift in Sources */,
+				67D1A307225584EE0098E80D /* GetUserAuctions.swift in Sources */,
+				67621AD72254DF49009CCC5C /* trashVC.swift in Sources */,
+				67621ADB2254F3FB009CCC5C /* trachcell.swift in Sources */,
+				67621AD92254F014009CCC5C /* favoriteCell.swift in Sources */,
+				67E3D34222518CFE0013518D /* NotifacationsVC.swift in Sources */,
+				67E3D348225193A90013518D /* Extensions.swift in Sources */,
+				67D1A30A22558F8A0098E80D /* myAuctionsAndAdv.swift in Sources */,
+				67D1A30C225590A20098E80D /* MyAcutions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +453,7 @@
 		};
 		677F73D722517AF70004BC10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2399CF5A9BFC5FEB7921495E /* Pods-mazad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +471,7 @@
 		};
 		677F73D822517AF70004BC10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19387C88601E6CBAFF2F86E0 /* Pods-mazad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

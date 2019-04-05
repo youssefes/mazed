@@ -11,56 +11,54 @@ import SwiftyJSON
 import Alamofire
 
 
-
-/*{
-    "Id": 10,
-    "Name": "يبيب",
-    "Description": "سبسبسب",
-    "MinimumPriceForOpen": 0,
-    "MinimumPriceForBid": 0,
-    "AuctionPriceToNow": 0,
-    "BiddersCount": 0,
-    "Files": [
-    {
-    "AlbumFileId": 93,
-    "State": 0,
-    "FileUrl": "http://alyoum-cp.mazadboutique.com/Files/Images/DREAM.jpg1375830307.jpg",
-    "FileUpload": null,
-    "IsVideo": false
-    }
-    ],
-    "BaseImage": "http://alyoum-cp.mazadboutique.com/Files/Images/DREAM.jpg1375830307.jpg",
-    "IsFinshed": true,
-    "IsStarted": true,
-    "Timer": {
-        "Days": -34,
-        "Hours": -18,
-        "Minutes": -3,
-        "Seconds": -8,
-        "StartIn": "27/02/2019 10:10:14 AM",
-        "EndIn": "28/02/2019 10:10:14 AM"
-    },
-    "IsFollowing": false,
-    "IsFavorite": false,
-    "CreateBy": {
-        "Id": 1,
-        "UserName": "ahmed",
-        "FullName": "ahmed Nageeb Mahmoud",
-        "Serial": "ahmed1",
-        "CountryName": "الكويت",
-        "Province": {
-            "Id": 6,
-            "Name": "مقاطعة 1"
-        },
-        "Phone": null,
-        "ImageUrl": "http://alyoum-cp.mazadboutique.com/Files/Images/Users/Profile/team3.jpg1162494133.jpg"
-    },
-    "CreateDateTime": "27/02/2019 10:10:14 AM",
-    "EndDateTime": "28/02/2019 10:10:14 AM",
-    "StartDateTime": "27/02/2019 10:10:14 AM"
-},
-*/
 class API {
+    
+    
+    // MARK : Register
+    class func Register(CountryKey : String, Email : String, Password : String, UserName : String, PhoneNumber : String, img : Data?, complation : @escaping (_ status: Bool)->Void){
+        
+        guard  let Url = URL(string: "http://alyoum-api.mazadboutique.com/MazadLyom/api/Account/Register?CountryKey=\(CountryKey)&Email=\(Email)&Password=\(Password)&UserName=\(UserName)&PhoneNumber=\(PhoneNumber)") else{
+            return
+        }
+        DispatchQueue.global(qos:.userInteractive).async {
+            
+            Alamofire.upload(multipartFormData: { (form : MultipartFormData) in
+                DispatchQueue.main.async {
+                    if let image = img {
+                        form.append(image, withName: "img", fileName: "photo.jpeg", mimeType: "image/jpeg")
+                    }
+                }
+                
+            }, usingThreshold: SessionManager.multipartFormDataEncodingMemoryThreshold, to: Url, method: .post, headers: nil) { (reselt : SessionManager.MultipartFormDataEncodingResult) in
+                switch reselt{
+                case .failure(let error):
+                    complation(false)
+                    print(error)
+                case .success(request: let upload, streamingFromDisk: _, streamFileURL: _):
+                    upload.uploadProgress(closure: { (progress) in
+                        print(progress)
+                    }).responseJSON(completionHandler: { (respond) in
+                        
+                        switch respond.result{
+                        case .failure(let error):
+                            print(" the is an error ->\(error)")
+                        case .success(let value):
+                            
+                            
+                            let json = JSON(value)
+                            print(json)
+                            complation(true)
+                            
+                        }
+                    })
+                }
+            }
+            
+        }
+        
+    }
+    
+    // MARK : GetMyAuctions
     class func GetMyAuctions(skip : String ,take : String , UserId :String, complation : @escaping (_ status :Bool)->Void){
         
         guard let Url = URL(string: "http://alyoum-api.mazadboutique.com/MazadLyom/api/Auctions/GetUserAuctions?skip=\(skip)&take=\(take)&userId=\(UserId)") else{
@@ -79,4 +77,61 @@ class API {
                 }
         }
     }
+    
+    
+    // MARK : GEtFavorite
+    
+    class func getFavorite(skip : String, take : String, token : String, Complation: @escaping (_ status : Bool, _ data : [Favouriet]?) ->Void){
+        
+        
+        guard let Url = URL(string: "http://alyoum-api.mazadboutique.com/MazadLyom/api/ProductsFovorite/GetFovorites?skip=\(skip)&take=\(take)") else{
+            return
+        }
+        
+        let header : HTTPHeaders = [
+            
+            "Authorization" : "Bearer \(token)"
+        ]
+        
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (respond) in
+            switch respond.result{
+            case .failure(let error):
+                print(error)
+                Complation(false, nil)
+            case .success(let value):
+                let json = JSON(value)
+                
+                guard let data = json["Data"].array else{
+                    Complation(false, nil)
+                    return
+                }
+                var favoiretDataAr = [Favouriet]()
+                for favoiretdata in data {
+                    guard  let product = favoiretdata["Product"].dictionary else{
+                        return
+                    }
+                    guard let name = product["Name"]?.stringValue else{
+                        return
+                    }
+                    guard let image = product["BaseImage"]?.stringValue else{
+                        return
+                    }
+                    
+                    guard let date = favoiretdata["Date"].string else {
+                        return
+                    }
+                    guard let time = favoiretdata["Time"].string else{
+                        return
+                    }
+                    let favoritProdec = Favouriet.init(name: name, Date: date, image: image, time: time)
+                    favoiretDataAr.append(favoritProdec)
+                }
+                Complation(true, favoiretDataAr)
+                
+            }
+            
+        }
+    }
+    
+    // Mark : Delete
 }

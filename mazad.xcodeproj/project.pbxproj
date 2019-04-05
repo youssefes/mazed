@@ -18,6 +18,10 @@
 		677F73D222517AF70004BC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677F73D022517AF70004BC10 /* LaunchScreen.storyboard */; };
 		677F73DC22517DE60004BC10 /* Janna LT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 677F73DA22517DE60004BC10 /* Janna LT.txt */; };
 		677F73DD22517DE60004BC10 /* JANNALT-REGULAR_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */; };
+		678F6E542256A8A30059B9CE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 678F6E532256A89E0059B9CE /* background.png */; };
+		678F6E562256AA790059B9CE /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678F6E552256AA790059B9CE /* Register.swift */; };
+		678F6E582256BD8F0059B9CE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678F6E572256BD8F0059B9CE /* Extension.swift */; };
+		678F6E5A2256D44E0059B9CE /* FavoiretModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678F6E592256D44E0059B9CE /* FavoiretModel.swift */; };
 		67D1A30422557D620098E80D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A30322557D620098E80D /* API.swift */; };
 		67D1A307225584EE0098E80D /* GetUserAuctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A306225584EE0098E80D /* GetUserAuctions.swift */; };
 		67D1A30A22558F8A0098E80D /* myAuctionsAndAdv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1A30922558F8A0098E80D /* myAuctionsAndAdv.swift */; };
@@ -45,6 +49,10 @@
 		677F73D322517AF70004BC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		677F73DA22517DE60004BC10 /* Janna LT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Janna LT.txt"; sourceTree = "<group>"; };
 		677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JANNALT-REGULAR_0.TTF"; sourceTree = "<group>"; };
+		678F6E532256A89E0059B9CE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		678F6E552256AA790059B9CE /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		678F6E572256BD8F0059B9CE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		678F6E592256D44E0059B9CE /* FavoiretModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoiretModel.swift; sourceTree = "<group>"; };
 		67D1A30322557D620098E80D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		67D1A306225584EE0098E80D /* GetUserAuctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserAuctions.swift; sourceTree = "<group>"; };
 		67D1A30922558F8A0098E80D /* myAuctionsAndAdv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAuctionsAndAdv.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 				677F73C722517AF40004BC10 /* AppDelegate.swift */,
 				677F73CB22517AF40004BC10 /* Main.storyboard */,
 				677F73CE22517AF70004BC10 /* Assets.xcassets */,
+				678F6E532256A89E0059B9CE /* background.png */,
 				677F73D022517AF70004BC10 /* LaunchScreen.storyboard */,
 				677F73D322517AF70004BC10 /* Info.plist */,
 			);
@@ -125,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				67D1A306225584EE0098E80D /* GetUserAuctions.swift */,
+				678F6E592256D44E0059B9CE /* FavoiretModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -133,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				67D1A30322557D620098E80D /* API.swift */,
+				678F6E572256BD8F0059B9CE /* Extension.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 				67621ADC2255026B009CCC5C /* contact_Us.swift */,
 				67D1A30922558F8A0098E80D /* myAuctionsAndAdv.swift */,
 				67D1A3112255A6520098E80D /* contactUs2.swift */,
+				678F6E552256AA790059B9CE /* Register.swift */,
 			);
 			path = container;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				677F73D222517AF70004BC10 /* LaunchScreen.storyboard in Resources */,
+				678F6E542256A8A30059B9CE /* background.png in Resources */,
 				677F73DD22517DE60004BC10 /* JANNALT-REGULAR_0.TTF in Resources */,
 				677F73CF22517AF70004BC10 /* Assets.xcassets in Resources */,
 				677F73DC22517DE60004BC10 /* Janna LT.txt in Resources */,
@@ -301,10 +314,13 @@
 				677F73C822517AF40004BC10 /* AppDelegate.swift in Sources */,
 				67621AD52254DF17009CCC5C /* favoirteVC.swift in Sources */,
 				67E3D34622518E490013518D /* NotificationCell.swift in Sources */,
+				678F6E5A2256D44E0059B9CE /* FavoiretModel.swift in Sources */,
 				67D1A30422557D620098E80D /* API.swift in Sources */,
 				67D1A307225584EE0098E80D /* GetUserAuctions.swift in Sources */,
+				678F6E582256BD8F0059B9CE /* Extension.swift in Sources */,
 				67621AD72254DF49009CCC5C /* trashVC.swift in Sources */,
 				67621ADB2254F3FB009CCC5C /* trachcell.swift in Sources */,
+				678F6E562256AA790059B9CE /* Register.swift in Sources */,
 				67621AD92254F014009CCC5C /* favoriteCell.swift in Sources */,
 				67E3D34222518CFE0013518D /* NotifacationsVC.swift in Sources */,
 				67E3D348225193A90013518D /* Extensions.swift in Sources */,

@@ -1124,7 +1124,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9b5-Uy-gLF">
-                                                            <rect key="frame" x="10" y="70" width="130" height="10"/>
+                                                            <rect key="frame" x="10" y="65" width="130" height="10"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="اسم السياره" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtB-KG-e6T">
                                                                     <rect key="frame" x="0.0" y="0.0" width="61" height="10"/>
@@ -1153,7 +1153,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image-icon" translatesAutoresizingMaskIntoConstraints="NO" id="fIM-4w-KFa">
-                                                            <rect key="frame" x="10" y="0.0" width="135" height="60"/>
+                                                            <rect key="frame" x="10" y="0.0" width="135" height="55"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -1168,7 +1168,7 @@
                                                         <constraint firstAttribute="width" constant="150" id="dHu-ki-GDF"/>
                                                         <constraint firstItem="yga-Zl-2mP" firstAttribute="leading" secondItem="fIM-4w-KFa" secondAttribute="leading" id="iAO-tB-HCU"/>
                                                         <constraint firstItem="yga-Zl-2mP" firstAttribute="trailing" secondItem="fIM-4w-KFa" secondAttribute="trailing" id="uUR-VF-Y8B"/>
-                                                        <constraint firstItem="yga-Zl-2mP" firstAttribute="top" secondItem="9b5-Uy-gLF" secondAttribute="bottom" constant="5" id="wOq-rY-GjE"/>
+                                                        <constraint firstItem="yga-Zl-2mP" firstAttribute="top" secondItem="9b5-Uy-gLF" secondAttribute="bottom" constant="10" id="wOq-rY-GjE"/>
                                                         <constraint firstAttribute="trailing" secondItem="fIM-4w-KFa" secondAttribute="trailing" constant="5" id="xIj-J9-Pdm"/>
                                                     </constraints>
                                                 </view>

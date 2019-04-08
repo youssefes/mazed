@@ -14,10 +14,10 @@
 		67621ADD2255026B009CCC5C /* contact_Us.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67621ADC2255026B009CCC5C /* contact_Us.swift */; };
 		677F73C822517AF40004BC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F73C722517AF40004BC10 /* AppDelegate.swift */; };
 		677F73CD22517AF40004BC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677F73CB22517AF40004BC10 /* Main.storyboard */; };
-		677F73CF22517AF70004BC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677F73CE22517AF70004BC10 /* Assets.xcassets */; };
 		677F73D222517AF70004BC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677F73D022517AF70004BC10 /* LaunchScreen.storyboard */; };
 		677F73DC22517DE60004BC10 /* Janna LT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 677F73DA22517DE60004BC10 /* Janna LT.txt */; };
 		677F73DD22517DE60004BC10 /* JANNALT-REGULAR_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */; };
+		67860FA4225B8E3800102496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67860FA3225B8E3700102496 /* Assets.xcassets */; };
 		678F6E542256A8A30059B9CE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 678F6E532256A89E0059B9CE /* background.png */; };
 		678F6E562256AA790059B9CE /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678F6E552256AA790059B9CE /* Register.swift */; };
 		678F6E582256BD8F0059B9CE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678F6E572256BD8F0059B9CE /* Extension.swift */; };
@@ -44,11 +44,11 @@
 		677F73C422517AF40004BC10 /* mazad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mazad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677F73C722517AF40004BC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		677F73CC22517AF40004BC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		677F73CE22517AF70004BC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		677F73D122517AF70004BC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		677F73D322517AF70004BC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		677F73DA22517DE60004BC10 /* Janna LT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Janna LT.txt"; sourceTree = "<group>"; };
 		677F73DB22517DE60004BC10 /* JANNALT-REGULAR_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JANNALT-REGULAR_0.TTF"; sourceTree = "<group>"; };
+		67860FA3225B8E3700102496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		678F6E532256A89E0059B9CE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		678F6E552256AA790059B9CE /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		678F6E572256BD8F0059B9CE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 				67E3D34322518DB30013518D /* container */,
 				677F73D922517DE60004BC10 /* FONTS */,
 				677F73C722517AF40004BC10 /* AppDelegate.swift */,
+				67860FA3225B8E3700102496 /* Assets.xcassets */,
 				677F73CB22517AF40004BC10 /* Main.storyboard */,
-				677F73CE22517AF70004BC10 /* Assets.xcassets */,
 				678F6E532256A89E0059B9CE /* background.png */,
 				677F73D022517AF70004BC10 /* LaunchScreen.storyboard */,
 				677F73D322517AF70004BC10 /* Info.plist */,
@@ -245,8 +245,8 @@
 				677F73D222517AF70004BC10 /* LaunchScreen.storyboard in Resources */,
 				678F6E542256A8A30059B9CE /* background.png in Resources */,
 				677F73DD22517DE60004BC10 /* JANNALT-REGULAR_0.TTF in Resources */,
-				677F73CF22517AF70004BC10 /* Assets.xcassets in Resources */,
 				677F73DC22517DE60004BC10 /* Janna LT.txt in Resources */,
+				67860FA4225B8E3800102496 /* Assets.xcassets in Resources */,
 				677F73CD22517AF40004BC10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

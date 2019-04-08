@@ -47,8 +47,25 @@ class contact_Us: UIViewController {
     
     
     @IBAction func sendmassage(_ sender: Any) {
+        
+        guard let email = emailTxT.text, !email.isEmpty, let message = massageTxt.text, !message.isEmpty else {
+            return
+        }
+        API.Contect_us(email: email, message: message, isContect: true) { (status, message) in
+            if status{
+                guard let messageToShow = message else{
+                    return
+                }
+                print(messageToShow)
+                
+                self.emailTxT.text = ""
+                self.massageTxt.text = ""
+            }
+        }
+        
     }
     @IBAction func callNow(_ sender: Any) {
+        
     }
     
     

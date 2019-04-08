@@ -17,10 +17,20 @@ class contactUs2: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
     @IBAction func sendNow(_ sender: UIButton) {
-        
+        guard let email = emailTxt.text, !email.isEmpty, let message = suggestTxt.text, !message.isEmpty else {
+            return
+        }
+        API.Contect_us(email: email, message: message, isContect: true) { (status, message) in
+            if status{
+                guard let messageToShow = message else{
+                    return
+                }
+                print(messageToShow)
+                self.emailTxt.text = ""
+                self.suggestTxt.text = ""
+            }
+        }
         
     }
     /*

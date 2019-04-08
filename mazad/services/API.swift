@@ -73,6 +73,12 @@ class API {
                 case .success(let value):
                     let json = JSON(value)
                     print(json)
+//                    let Id = json["Id"].int
+//                    let Name = json["Name"].string
+//                    let AuctionPriceToNow = json["AuctionPriceToNow"].int
+//                    let BaseImage = json["BaseImage"].string
+//                    let CreateDateTime = json["CreateDateTime"].string
+                    
                     complation(true)
                 }
         }
@@ -133,5 +139,59 @@ class API {
         }
     }
     
-    // Mark : Delete
+    // Mark : Notifications
+    
+    // http://alyoum-api.mazadboutique.com/MazadLyom/api/Notifications/GetNotifications?skip=0&take=10
+    class func Notifications(skip : String, take : String, token: String ,  complation:@escaping (_ status: Bool, _ NotifacationDa : NotifacationData?)->Void){
+        
+        let header : HTTPHeaders = [
+            "Authorization" : "Bearer \(token)"
+        ]
+        
+        guard let Url = URL(string: "http://alyoum-api.mazadboutique.com/MazadLyom/api/Notifications/GetNotifications?skip=\(skip)&take=\(take)") else{
+            return
+        }
+        
+        Alamofire.request(Url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseJSON { (respond) in
+            switch respond.result{
+            case .failure(let error):
+                print(error)
+                complation(false, nil)
+            case .success(_ ):
+                let data = respond.data
+                
+                do {
+                    let Notifacations = try JSONDecoder().decode(NotifacationData.self, from: data!)
+                    complation(true, Notifacations)
+                    print(Notifacations)
+                    
+                }catch{
+                    print(error)
+                    complation(false,nil)
+                }
+                
+            }
+        }
+    }
+    
+    
+    // Mark : Contect_US
+    class func Contect_us(email : String, message : String, isContect : Bool, Complatin : @escaping (_ status : Bool , _ Message : String?) -> Void){
+        
+        guard let url = URL(string: "http://alyoum-api.mazadboutique.com/MazadLyom/api/TechnicalSupport/PostTechnicalSupport?Message=\(message)&Email=\(email)IsContact=\(isContect)")else{
+            return
+        }
+        
+        Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (respond) in
+            switch respond.result{
+            case .failure(let error):
+                print(error)
+                Complatin(false, nil)
+            case .success(let value):
+                let json = JSON(value)
+                let massage = json["Message"].string
+                Complatin(true, massage)
+            }
+        }
+    }
 }

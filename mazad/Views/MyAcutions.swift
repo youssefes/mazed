@@ -10,6 +10,12 @@ import UIKit
 
 class MyAcutions: UITableViewCell {
 
+    @IBOutlet weak var prodectView: UIView!
+    @IBOutlet weak var timeAction: UILabel!
+    @IBOutlet weak var priceActions: UILabel!
+    @IBOutlet weak var nameActions: UILabel!
+    @IBOutlet weak var imageActions: UIImageView!
+    @IBOutlet weak var viewActions: UIView!
     @IBOutlet weak var deletBTn: UIButton!
     @IBOutlet weak var editBTN: UIButton!
     @IBOutlet weak var reSharebtn: UIButton!
